@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Delta Charlie Foxtrot Limited</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            margin: 20px;
+            overflow: hidden;
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .typing {
+            font-size: 2em;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        .typing::after {
+            content: "";
+            border-right: 0.1em solid lime;
+            animation: blink-caret 0.75s step-end infinite;
+            position: absolute;
+            right: 0;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: lime; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left">
+        <a href="terms.html">T&C's</a>
+    </div>
+    <div class="center">
+        <h1 class="typing" style="animation: typing 4s steps(30, end) forwards;">Delta Charlie Foxtrot Limited</h1>
+    </div>
+</body>
+</html>
